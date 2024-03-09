@@ -1,0 +1,40 @@
+#tecnologias-container {
+  margin-bottom: 2.5rem;
+}
+#tecnologias-container .tecnologias-grid {
+  display: flex;
+  gap: 1.5rem;
+}
+#tecnologias-container .tecnologias-grid .tecnologia-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem;
+  border: 1px solid #333;
+  width: 18%;
+  border-radius: 5px;
+}
+#tecnologias-container .tecnologias-grid .tecnologia-card h3 {
+  color: #fff;
+  margin-bottom: 1rem;
+}
+#tecnologias-container .tecnologias-grid .tecnologia-card svg {
+  font-size: 4rem;
+}
+#tecnologias-container .tecnologias-grid #html {
+  color: #1572b6;
+}
+#tecnologias-container .tecnologias-grid #js {
+  color: #f0db4f;
+}
+#tecnologias-container .tecnologias-grid #react {
+  color: #61dafb;
+}
+#tecnologias-container .tecnologias-grid #css {
+  color: #E44D26;
+}
+#tecnologias-container .tecnologias-grid #sass {
+  color: rgb(221, 36, 118);
+}/*# sourceMappingURL=tecnologias.css.map */

@@ -1,0 +1,45 @@
+@use '../mixins'
+@use '../variables'
+
+#projetos-cards
+    display: flex
+    gap: 1rem
+    margin-bottom: 2rem
+    
+    .card
+        display: flex
+        flex-direction: column
+        align-items: center
+        justify-content: space-between
+        gap: .3rem
+        width: 20%
+        border-radius: variables.$card-border-radius
+        border: 1px solid #333
+       
+        img
+            width: 100%
+            height: 50%
+        
+        h4
+            color: variables.$text-color
+        p
+            text-align: center
+            color: variables.$text-color
+            padding: 0 .5rem
+          
+           
+        .btn-card
+            padding: 1rem 1.2rem
+            color: variables.$text-color 
+            background: variables.$body-bg-color 
+            text-decoration: none
+            border-radius: 3rem
+            padding: .6rem .8rem
+            font-size: 14px
+            font-weight: 700
+            margin-bottom: .8rem
+            transition: .4s 
+            &:hover
+                background: variables.$gradient
+                
+    

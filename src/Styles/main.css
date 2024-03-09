@@ -1,0 +1,15 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Helvetica";
+  box-sizing: border-box;
+  font-family: "Raleway", sans-serif;
+}
+
+body {
+  background: #271831;
+}
+
+a, svg {
+  transition: 0.4s;
+}/*# sourceMappingURL=main.css.map */

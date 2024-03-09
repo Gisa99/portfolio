@@ -1,0 +1,23 @@
+@use 'variables'
+
+@mixin gradient-border
+  content:""
+  background: variables.$gradient
+  border-radius: 2px
+  height: 5px
+  width: 30%
+
+@mixin center
+  display: flex
+  justify-content: center
+  align-items: center
+
+@mixin btn 
+  padding: 1rem 1.2rem
+  color: variables.$text-color 
+  background: variables.$gradient 
+  text-decoration: none
+  border-radius: 3rem
+  transition: .4s
+  &:hover
+    background: variables.$body-bg-color
