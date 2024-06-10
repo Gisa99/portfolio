@@ -1,14 +1,43 @@
 #portfolio {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
   padding: 3rem;
   gap: 3rem;
+}
+@media (max-width: 1280px) {
+  #portfolio {
+    padding: 0;
+  }
+}
+#portfolio .portfolio-content {
+  display: flex;
+  gap: 1.5rem;
+}
+@media (max-width: 1280px) {
+  #portfolio .portfolio-content {
+    flex-direction: column;
+    width: 100vw;
+  }
 }
 #portfolio h1 {
   width: 100%;
   font-size: 5rem;
-  margin-bottom: 4rem;
+  margin-bottom: 6rem;
   background: linear-gradient(90deg, #d53bfc 0%, #da1ac0 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+@media (max-width: 768px) {
+  #portfolio h1 {
+    font-size: 2.5rem;
+    margin: 2rem 0 0 0;
+    text-align: center;
+  }
+}
+@media (min-width: 768px) and (max-width: 1280px) {
+  #portfolio h1 {
+    font-size: 3.5rem;
+    text-align: center;
+    margin: 2rem 0 0 0;
+  }
 }/*# sourceMappingURL=app.css.map */

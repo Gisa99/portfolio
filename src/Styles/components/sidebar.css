@@ -1,26 +1,56 @@
 #sidebar {
   background-color: #111;
-  flex: 1 1 0;
   border-radius: 10px;
   display: flex;
+  flex: 1;
+  min-width: 30%;
   align-items: center;
   flex-direction: column;
   text-align: center;
   position: relative;
   padding: 3rem 0;
 }
+@media (max-width: 768px) {
+  #sidebar {
+    border-radius: 0px;
+  }
+}
 #sidebar img {
-  max-width: 70%;
+  max-width: 50%;
   border-radius: 10px;
   position: absolute;
-  top: -3rem;
+  margin-top: -4rem;
+}
+@media (min-width: 768px) and (max-width: 1280px) {
+  #sidebar img {
+    max-width: 35%;
+  }
+}
+@media (min-width: 1440px) {
+  #sidebar img {
+    margin-top: -10rem;
+  }
 }
 #sidebar .title {
   color: #a6a6a6;
   background-color: #1d1d1d;
   border-radius: 5px;
-  margin-top: 13.5rem;
-  padding: 0.8rem 1.2rem;
+  margin-top: 8.5rem;
+}
+@media (min-width: 414px) and (max-width: 768px) {
+  #sidebar .title {
+    margin-top: 11rem;
+  }
+}
+@media (min-width: 768px) and (max-width: 1280px) {
+  #sidebar .title {
+    margin-top: 15rem;
+  }
+}
+@media (min-width: 1280px) {
+  #sidebar .title {
+    padding: 0.8rem 1.2rem;
+  }
 }
 #sidebar .btn {
   padding: 1rem 1.2rem;
@@ -29,4 +59,7 @@
   text-decoration: none;
   border-radius: 3rem;
   transition: 0.4s;
+}
+#sidebar .btn:hover {
+  background: #271831;
 }/*# sourceMappingURL=sidebar.css.map */

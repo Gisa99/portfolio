@@ -6,6 +6,9 @@
     flex: 2 1 0
     border-radius: variables.$container-border-radius
     padding: 3rem
+    @media(max-width: 768px)
+        border-radius: 0px
+        padding: 1.5rem
 
     section
         display: flex
@@ -30,4 +33,6 @@
         .btn 
             @include mixins.btn
             align-self: start
+            @media(max-width: 1280px)
+                align-self: center
 

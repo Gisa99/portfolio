@@ -1,11 +1,13 @@
 import '../Styles/components/tecnologias.sass'
+import { SiTailwindcss } from 'react-icons/si';
 
 import {
     DiHtml5,
     DiCss3,
     DiJsBadge,
     DiReact,
-    DiSass    
+    DiSass
+   
 } from 'react-icons/di'
 
 
@@ -16,6 +18,7 @@ const tecnologias =[
     {id: "js", name: "JavaScript", icon: <DiJsBadge/>},
     {id: "react", name: "React", icon: <DiReact/>},
     {id: "sass", name: "Sass", icon: <DiSass/>},
+    {id: "tailwind", name: "Tailwind", icon: <SiTailwindcss style={{ color: '#38b2ac' }}/>}
 ]
 
 const Tecnologias = () =>{

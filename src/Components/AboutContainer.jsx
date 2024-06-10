@@ -4,9 +4,8 @@ const AboutContainer = () => {
     return (
         <section id="about-container">
             <h2>Sobre</h2>
-            <p>Olá, me chamo Gisele, sou estudante de Engenharia de Software, apaixonada por tecnologia, animes e café!</p>
-            <p>Atualmente busco uma vaga na área para consolidar o meu conhecimento.
-            </p>
+            <p>Oi, sou a Gisele! Estudante de Engenharia de Software que adora mergulhar no mundo da tecnologia, maratonar animes e tomar um bom café!</p>
+            <p>Estou em busca de uma oportunidade para transformar meu conhecimento em soluções reais e inovadoras.</p>
             <p><a href="#"></a></p>
 
         </section>

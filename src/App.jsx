@@ -10,8 +10,10 @@ function App() {
     <>
       <div id="portfolio">  
           <h1>Gisele França</h1>
-         <Sidebar />
-         <MainContent />
+          <div className='portfolio-content'>
+            <Sidebar />
+            <MainContent />
+         </div>
       </div>
       
     </>

@@ -5,6 +5,20 @@
   display: flex;
   gap: 1.5rem;
 }
+@media (max-width: 768px) {
+  #tecnologias-container .tecnologias-grid {
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    width: 100%;
+    justify-content: space-around;
+  }
+}
+@media (min-width: 768px) and (max-width: 1440px) {
+  #tecnologias-container .tecnologias-grid {
+    justify-content: start;
+    gap: 1rem;
+  }
+}
 #tecnologias-container .tecnologias-grid .tecnologia-card {
   display: flex;
   flex-direction: column;
@@ -13,7 +27,7 @@
   gap: 1rem;
   padding: 1rem;
   border: 1px solid #333;
-  width: 18%;
+  width: 150px;
   border-radius: 5px;
 }
 #tecnologias-container .tecnologias-grid .tecnologia-card h3 {

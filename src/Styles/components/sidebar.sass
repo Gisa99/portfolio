@@ -1,32 +1,49 @@
 @use '../variables'
 @use '../mixins'
 
-
-#sidebar
-    background-color: variables.$bg-color
-    flex: 1 1 0
+#sidebar 
+  background-color: variables.$bg-color
+  border-radius: variables.$container-border-radius
+  display: flex
+  flex: 1
+  min-width: 30%
+  align-items: center
+  flex-direction: column
+  text-align: center
+  position: relative
+  padding: 3rem 0
+  @media(max-width: 768px)
+    border-radius: 0px
+ 
+  img 
+    max-width: 50%
     border-radius: variables.$container-border-radius
-    display: flex
-    align-items: center
-    flex-direction: column
-    text-align: center
-    position: relative
-    padding: 3rem 0
-
-    img
-        max-width: 70%
-        border-radius: variables.$container-border-radius
-        position: absolute
-        top: -3rem
-
-    .title
-        color: variables.$text-color-secundary
-        background-color: variables.$bg-color-secundary
-        border-radius: variables.$card-border-radius
-        margin-top: 13.5rem
+    position: absolute
+    margin-top: -4rem
+    @media(min-width: 768px) and (max-width: 1280px)
+      max-width: 35%
+    @media(min-width: 1440px)
+        margin-top: -10rem
+    
+  
+  .title 
+    color: variables.$text-color-secundary
+    background-color: variables.$bg-color-secundary
+    border-radius: variables.$card-border-radius
+    margin-top: 8.5rem
+    @media(min-width: 414px) and (max-width: 768px)
+        margin-top: 11rem
+    @media(min-width: 768px) and (max-width: 1280px)
+        margin-top: 15rem
+    @media(min-width: 1280px)
         padding: .8rem 1.2rem
+  
+  .btn 
+    @include mixins.btn
+  
+  
     
-    .btn
-        @include mixins.btn
-      
-    
+  
+
+
+

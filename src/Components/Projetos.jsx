@@ -30,12 +30,6 @@ const Projetos = () =>{
                     <a href="https://organo-animes-series.vercel.app/" target='_blank' className="btn-card"> Ver Projeto </a>
                 </div>
                 <div className="card">
-                    <img src={Game} alt="capa do jogo acerte o número" />
-                    <h4>Acerte o Número</h4>
-                    <p>Tente acertar o número correto por comando de voz.</p>
-                    <a href="https://acerte-o-numero-git-main-gisa99.vercel.app/" target='_blank' className="btn-card"> Ver Projeto </a>
-                </div>
-                <div className="card">
                     <img src={Book} alt="capa do projeto Coffe&Book" />
                     <h4>Coffee & Book </h4>
                     <p>Projeto biblioteca First Mobil: testanto responsividade.</p>
@@ -44,7 +38,7 @@ const Projetos = () =>{
 
             </div>
 
-            <a href="https://github.com/Gisa99/Pomodore" target='_blank' className="btn"> Ver Portfólio </a>
+            <a href="https://github.com/Gisa99" target='_blank' className="btn"> Ver Portfólio </a>
             
         </section>
     )

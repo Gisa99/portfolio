@@ -1,7 +1,21 @@
 #projetos-cards {
   display: flex;
-  gap: 1rem;
+  gap: 2rem;
   margin-bottom: 2rem;
+}
+@media (max-width: 768px) {
+  #projetos-cards {
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+}
+@media (min-width: 414px) and (max-width: 768px) {
+  #projetos-cards {
+    flex-wrap: wrap;
+    flex: 1;
+    justify-content: space-around;
+    gap: 1rem;
+  }
 }
 #projetos-cards .card {
   display: flex;
@@ -9,9 +23,19 @@
   align-items: center;
   justify-content: space-between;
   gap: 0.3rem;
-  width: 20%;
+  width: 150px;
   border-radius: 5px;
   border: 1px solid #333;
+}
+@media (min-width: 768px) and (max-width: 1280px) {
+  #projetos-cards .card {
+    flex: 1;
+  }
+}
+@media (min-width: 1280px) {
+  #projetos-cards .card {
+    min-width: calc(20% - 1rem);
+  }
 }
 #projetos-cards .card img {
   width: 100%;
